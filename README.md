@@ -1,4 +1,4 @@
-# Machine Learning Backend.
+# Machine Learning Backend
 
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.x](https://img.shields.io/badge/python-3.x-brightgreen.svg)](https://www.python.org/)
