@@ -1,0 +1,47 @@
+name: Model Training Pipeline
+
+on:
+  schedule:
+    - cron: '0 2 * * 0'  # Weekly retraining
+  workflow_dispatch:
+    inputs:
+      retrain:
+        description: 'Force model retraining'
+        required: false
+        default: 'false'
+
+jobs:
+  train-model:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v3
+      with:
+        python-version: 3.9
+    
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+    
+    - name: Run ETL Pipeline
+      run: |
+        python -m src.data.extract
+        python -m src.data.transform
+        python -m src.data.load
+    
+    - name: Train Models
+      run: |
+        python -m src.models.train
+    
+    - name: Evaluate Models
+      run: |
+        python -m src.models.evaluate
+    
+    - name: Upload Model Artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: trained-models
+        path: models/trained/
