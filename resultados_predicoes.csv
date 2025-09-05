@@ -1,0 +1,16 @@
+Age,Year_operation,Axillary_nodes_detected,Prediction,Survival_Status,Confidence
+68,63,16,2,Morreu < 5 anos,82.29017916895287
+58,62,26,2,Morreu < 5 anos,85.85954738374053
+44,59,26,2,Morreu < 5 anos,54.53843706546411
+37,65,9,1,Sobreviveu >= 5 anos,82.05068182098545
+50,69,27,1,Sobreviveu >= 5 anos,51.57268319451154
+68,63,27,2,Morreu < 5 anos,95.08428811072096
+48,59,15,2,Morreu < 5 anos,60.94082505553637
+52,69,14,1,Sobreviveu >= 5 anos,50.73355175202621
+40,62,29,1,Sobreviveu >= 5 anos,60.907664493582594
+40,58,29,1,Sobreviveu >= 5 anos,52.4622693938517
+53,69,14,2,Morreu < 5 anos,52.20526958304692
+65,67,29,2,Morreu < 5 anos,90.5904471269402
+69,63,18,2,Morreu < 5 anos,87.308460151231
+53,69,11,2,Morreu < 5 anos,51.12487593668481
+32,66,22,1,Sobreviveu >= 5 anos,84.96342537428086

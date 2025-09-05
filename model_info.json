@@ -1,0 +1,23 @@
+{
+  "model_name": "NN",
+  "accuracy": 0.75,
+  "cv_score": 0.751082251082251,
+  "features": [
+    "LR",
+    "LDA",
+    "KNN",
+    "CART",
+    "NB",
+    "SVM",
+    "NN",
+    "RFC"
+  ],
+  "classes": [
+    1,
+    2
+  ],
+  "class_names": [
+    "Sobreviveu >= 5 anos",
+    "Morreu < 5 anos"
+  ]
+}
